@@ -1,1 +1,1 @@
-# AlegriaSalao
+O Salão de Festas Alegria é uma empresa especializada na locação de espaços para eventos como aniversários, casamentos, formaturas, confraternizações e eventos corporativos. Para melhorar a divulgação dos serviços e organizar melhor os processos internos, a empresa deseja desenvolver um sistema que funcione como um site informativo e de gerenciamento web.
