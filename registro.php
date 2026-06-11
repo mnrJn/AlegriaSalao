@@ -2,20 +2,20 @@
 $dbHost = 'localhost';
 $dbUsername = 'root';
 $dbPassword = '123456789';
-$dbName = 'academia';
+$dbName = 'salao';
 
 $conexao= new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 if ($conexao->connect_errno){
-die("ERRO NA CONEXÃ:" . $conexao->connect_error);
+die("ERRO NA CONEXÃO:" . $conexao->connect_error);
 
 }
-$idcliente =$_POST['id_cliente'];
+$id_cliente =$_POST['id_cliente'];
 $nome=$_POST['nome'];
 $cpf=$_POST['cpf'];
 $telefone=$_POST['telefone'];
 $email=$_POST['email'];
-$datacadastro=$_POST['data_cadastro'];
-$sql= "INSERT INTO clientes (id_cliente,nome,cpf,telefone,email,data_cadastro) VALUES ('$idcliente','$nome','$cpf','$telefone','$email','$datacadastro')";
+$data_cadastro=$_POST['data_cadastro'];
+$sql= "INSERT INTO cliente (id_cliente,nome,cpf,telefone,email,data_cadastro) VALUES ('$id_cliente','$nome','$cpf','$telefone','$email','$data_cadastro')";
 if($conexao->query($sql)===TRUE){
     echo "Aluno Cadastrado com sucesso!!!";
 }
